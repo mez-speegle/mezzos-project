@@ -2,7 +2,7 @@ namespace SpriteKind {
     export const USB = SpriteKind.create()
 }
 sprites.onOverlap(SpriteKind.USB, SpriteKind.Player, function (sprite, otherSprite) {
-    sprites.destroy(sprite, effects.spray, 200)
+    sprites.destroy(sprite, effects.spray, 500)
     info.changeScoreBy(1)
     info.changeLifeBy(1)
     computerboy.sayText("yay!", 1000, true)
